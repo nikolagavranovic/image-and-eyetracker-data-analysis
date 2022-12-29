@@ -1,0 +1,4 @@
+Application that processes image with data that is stored in csv file. Csv contains informations about time and coordinates on image where in that moment the person looked. Informations in csv file are in format "timespamp;x_coordinate;y_coordinate".
+Application does two things:
+1) informations are filtered and mapped on input image, and result is heatmap that shows density of distribution where person looked.
+2) clusterizing of dots representing data. For clusterizing, the Mean Shift algorithm is used. The mean shift is implemented from scratch, as it is described in MeanShift.pdf, and as a cernel function, the Gaussian function is used. 
